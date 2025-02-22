@@ -21,5 +21,6 @@ cd ..
 
 # Wait for user to terminate
 echo "Backend and frontend are running. Press [CTRL+C] to stop."
+yarn install
 trap "kill $BACKEND_PID $FRONTEND_PID" EXIT
 wait
