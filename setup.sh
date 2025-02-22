@@ -13,7 +13,8 @@ cd ..
 # Set up the frontend
 echo "Setting up the frontend..."
 cd frontend
-yarn install --check-files
+yarn install
+yarn build
 yarn dev &
 FRONTEND_PID=$!
 cd ..
